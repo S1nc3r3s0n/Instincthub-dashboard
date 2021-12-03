@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instincthub Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+
+</head>
+<body>
+    <div class="dashboard"><!--Dashboard-->
+        <section class="navigation"><!--Navigation-->
+            <img src="assets/img/Instincthub logo.png" alt="Instincthub logo" class="logo">
+            <ul>
+                <li> <img src="assets/img/bx_bxs-dashboard.png" alt="overview">Overview</li>
+                <li> <img src="assets/img/akar-icons_file.png" alt="classes">Classes</li>
+                <li> <img src="assets/img/codicon_graph.png" alt="analytics">Analytics</li>
+                <li> <img src="assets/img/ic_baseline-group.png" alt="community">Community</li>
+                <li> <img src="assets/img/fe_logout.png" alt="log-out">Log-out</li>
+            </ul>
+            <div class="upgrade">
+                <img src="assets/img/Upgrade illustration.png" alt="upgrade">
+                <p>Upgrade your student portal account</p>
+                <button>Upgrade</button>
+            </div>
+        </section> <!--Navigation End-->
+
+        <section class="main"><!--Main-->
+            <div class="search">
+                <nav>
+                    <h2>My Course Dashboard</h2>
+                    <input type="text" name="search" id="search" placeholder="You are looking for...">
+                    <img src="assets/img/bx_bx-search.png" alt="">
+                    <img src="assets/img/codicon_bell-dot.png" alt="">
+                    <img src="assets/img/User profile.png" alt="">
+                </nav>
+            </div>
+
+            <div class="chart_box"> <!--Chart-->
+                <div class="doughnut_box">
+                    
+                <div class="daily">
+    <canvas id="daily" width="400" height="400"></canvas>
+                </div>
+
+                <h1>70%</h1>
+                <p>Daily <br><span> Activities </span></p>
+
+                <div class="monthly">
+    <canvas id="monthly" width="400" height="400"></canvas>
+                </div>
+
+                <h1>20%</h1>
+                <p>Monthly <br><span> Activities </span></p>
+
+                <div class="yearly">
+    <canvas id="yearly" width="400" height="400"></canvas>
+                </div>
+                
+                <h1>12%</h1>
+                <p>Yearly <br><span> Activities </span></p>
+
+                </div>
+            </div><!--Chart End-->
+
+            <div class="table"><!--Table-->
+                <div class="heading">
+                    <ul>
+                        <li>No</li>
+                        <li>Course Name</li>
+                        <li>Department</li>
+                        <li>Unit</li>
+                        <li>GPA</li>
+                    </ul>
+                </div>
+                <div class="listings">
+                    <div class="row1">
+                        <ul>
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                        </ul>
+                        <div class="row2">
+                        <span>
+                            <ul>
+                                <li>Tax Academy Introduction</li>
+                                <li>Transfer Pricing</li>
+                                <li>Tax Academy for Beginners</li>
+                                <li>New Business</li>
+                                <li>Tax Accounting</li>
+                                <li>Motion Design</li>
+                                <li>3D Modeling</li>
+                                <li>Brand Strategy on Instagram</li>
+                            </ul>
+                        </span>
+                        </div>
+
+                        <div class="row3">
+                        <span>
+                            <ul>
+                                <li>Finances</li>
+                                <li>Customer Service</li>
+                                <li>Purchasing</li>
+                                <li>Finances</li>
+                                <li>Administration</li>
+                                <li>IT Dep</li>
+                                <li>IT Dep</li>
+                                <li>Marketing</li>
+                            </ul>
+                        </span>
+                        </div>
+
+                        <div class="row4">
+                        <span>
+                            <ul>
+                                <li>3</li>
+                                <li>3</li>
+                                <li>3</li>
+                                <li>3</li>
+                                <li>8</li>
+                                <li>6</li>
+                                <li>3</li>
+                                <li>3</li>
+                            </ul>
+                        </span>
+                        </div>
+
+                        <div class="row5">
+                        <span>
+                            <ul>
+                                <li>4.3/5</li>
+                                <li>4.3/5</li>
+                                <li>4.3/5</li>
+                                <li>3.0/5</li>
+                                <li>4.7/5</li>
+                                <li>4.4/5</li>
+                                <li>3.0/5</li>
+                                <li>4.7/5</li>
+                            </ul>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Table End-->
+        </section> <!--Main End-->
+
+        <section class="learnmore"><!--Learn More-->
+            <div class="notice">
+                <h2>When Nothing goes right, go left</h2>
+                <p>Build your skills with courses and degrees online fron <br><span>anywhere with professional instructions</span></p>
+                <button>Learn More</button>
+            </div>
+            <div>
+            <span class="img">
+                <img src="assets/img/female image.png" alt="">
+            </span>
+            </div>
+
+        </section><!--Learn More End-->
+    </div><!--Dashboard End-->
+
+    <script src="daily.js"></script>
+    <script src="monthly.js"></script>
+    <script src="yearly.js"></script>  
+</body>
+</html>
