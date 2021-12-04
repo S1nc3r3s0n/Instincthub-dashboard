@@ -1,5 +1,5 @@
-const ctx = document.getElementById('yearly').getContext('2d');
-const myChart = new Chart(ctx, {
+const year = document.getElementById('yearly').getContext('2d');
+const yearly = new Chart(year, {
     type: 'doughnut',
     data: {
         labels: [],

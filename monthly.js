@@ -1,5 +1,5 @@
 const month = document.getElementById('monthly').getContext('2d');
-const myChart = new Chart(month, {
+const monthly = new Chart(month, {
     type: 'doughnut',
     data: {
         labels: [],

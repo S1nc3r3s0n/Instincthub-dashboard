@@ -20,59 +20,183 @@
         <section class="navigation"><!--Navigation-->
             <img src="assets/img/Instincthub logo.png" alt="Instincthub logo" class="logo">
             <ul>
-                <li> <img src="assets/img/bx_bxs-dashboard.png" alt="overview">Overview</li>
-                <li> <img src="assets/img/akar-icons_file.png" alt="classes">Classes</li>
-                <li> <img src="assets/img/codicon_graph.png" alt="analytics">Analytics</li>
-                <li> <img src="assets/img/ic_baseline-group.png" alt="community">Community</li>
-                <li> <img src="assets/img/fe_logout.png" alt="log-out">Log-out</li>
+                <li> <div class="category"></div> <img src="assets/img/bx_bxs-dashboard.png" alt="overview" class="dash_logo">Overview</li>
+                <li> <img src="assets/img/akar-icons_file.png" alt="classes" class="dash_logo">Classes</li>
+                <li> <img src="assets/img/codicon_graph.png" alt="analytics" class="dash_logo">Analytics</li>
+                <li> <img src="assets/img/ic_baseline-group.png" alt="community" class="dash_logo">Community</li>
+                <li> <img src="assets/img/fe_logout.png" alt="log-out" class="dash_logo">Log-out</li>
             </ul>
             <div class="upgrade">
                 <img src="assets/img/Upgrade illustration.png" alt="upgrade">
-                <p>Upgrade your student portal account</p>
+                <p>Upgrade your <br> student portal <br> account</p>
                 <button>Upgrade</button>
             </div>
         </section> <!--Navigation End-->
 
         <section class="main"><!--Main-->
+
             <div class="search">
                 <nav>
+
                     <h2>My Course Dashboard</h2>
-                    <input type="text" name="search" id="search" placeholder="You are looking for...">
-                    <img src="assets/img/bx_bx-search.png" alt="">
-                    <img src="assets/img/codicon_bell-dot.png" alt="">
-                    <img src="assets/img/User profile.png" alt="">
+
+                    <div class="profile_icon">
+                        <input type="text" name="search" id="search" placeholder="You are looking for...">
+                        <img src="assets/img/bx_bx-search.png" alt="">
+                        <img src="assets/img/codicon_bell-dot.png" alt="">
+                        <img src="assets/img/User profile.png" alt="">
+                    </div>
                 </nav>
             </div>
 
             <div class="chart_box"> <!--Chart-->
+
                 <div class="doughnut_box">
-                    
-                <div class="daily">
+
+                <div class="d_wrap">   
+                
+                    <div class="daily">
     <canvas id="daily" width="400" height="400"></canvas>
                 </div>
+            
 
-                <h1>70%</h1>
-                <p>Daily <br><span> Activities </span></p>
+                <h1 class="seven">70%</h1>
+                <p>Daily<br><span> Activities </span></p>
 
-                <div class="monthly">
+                </div>
+
+                </div>
+
+                <div class="doughnut_box">
+
+                <div class="d_wrap">   
+                
+                    <div class="monthly">
     <canvas id="monthly" width="400" height="400"></canvas>
                 </div>
+            
 
-                <h1>20%</h1>
-                <p>Monthly <br><span> Activities </span></p>
+                <h1 class="seven">20%</h1>
+                <p>Monthly<br><span> Activities </span></p>
 
-                <div class="yearly">
-    <canvas id="yearly" width="400" height="400"></canvas>
                 </div>
                 
-                <h1>12%</h1>
-                <p>Yearly <br><span> Activities </span></p>
-
                 </div>
-            </div><!--Chart End-->
 
-            <div class="table"><!--Table-->
-                <div class="heading">
+                <div class="doughnut_box">
+
+                    <div class="d_wrap">   
+                    
+                        <div class="yearly">
+        <canvas id="yearly" width="400" height="400"></canvas>
+                    </div>
+                
+    
+                    <h1 class="seven">12%</h1>
+                    <p>Yearly <br><span> Activities </span></p>
+    
+                    </div>
+                    
+                    </div>
+            </div> <!--Chart End-->
+
+           
+        <!-- </section> Main End-->
+
+        <table border="1">
+            <thead>
+            <tr>
+                <td>No</td>
+                <td>Course Name</td>
+                <td>Department</td>
+                <td>Unit</td>
+                <td>GPA</td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>0</td>
+                <td>Tax Academy Introduction</td>
+                <td>Finances</td>
+                <td>3</td>
+                <td>4.3/5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Transfer Pricing</td>
+                <td>Customer Service</td>
+                <td>3</td>
+                <td>4.3/5</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Tax Academy for Beginners</td>
+                <td>Purchasing</td>
+                <td>3</td>
+                <td>4.3/5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>New Business</td>
+                <td>Finances</td>
+                <td>3</td>
+                <td>3.0/5</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Tax Accounting</td>
+                <td>Administration</td>
+                <td>8</td>
+                <td>4.7/5</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Motion Design</td>
+                <td>IT Dep</td>
+                <td>6</td>
+                <td>4.4/5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>3D Modeling</td>
+                <td>IT Dep</td>
+                <td>3</td>
+                <td>3.0/5</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Brand Strategy on Instagram</td>
+                <td>Marketing</td>
+                <td>3</td>
+                <td>4.7/5</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+
+        <section class="learnmore"><!--Learn More-->
+            <div class="notice">
+                <img src="assets/img/female image.png" alt="">
+                <h2>When Nothing goes right, go left</h2>
+                <p>Build your skills with courses and degrees online fron <br>anywhere with professional instructions</p>
+                <button>Learn More</button>
+            </div>
+
+        </section><!--Learn More End-->
+    </div><!--Dashboard End-->
+
+    <script src="daily.js"></script>
+    <script src="monthly.js"></script>
+    <script src="yearly.js"></script>  
+</body>
+</html>
+
+ <!-- <div class="table">Table -->
+                <!-- <div class="heading">
                     <ul>
                         <li>No</li>
                         <li>Course Name</li>
@@ -153,27 +277,57 @@
                         </span>
                         </div>
                     </div>
-                </div>
-            </div><!--Table End-->
-        </section> <!--Main End-->
+                </div> -->
+            <!-- </div>Table End -->
 
-        <section class="learnmore"><!--Learn More-->
-            <div class="notice">
-                <h2>When Nothing goes right, go left</h2>
-                <p>Build your skills with courses and degrees online fron <br><span>anywhere with professional instructions</span></p>
-                <button>Learn More</button>
-            </div>
-            <div>
-            <span class="img">
-                <img src="assets/img/female image.png" alt="">
-            </span>
-            </div>
 
-        </section><!--Learn More End-->
-    </div><!--Dashboard End-->
-
-    <script src="daily.js"></script>
-    <script src="monthly.js"></script>
-    <script src="yearly.js"></script>  
-</body>
-</html>
+            <!-- <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Tax Academy Introduction</td>
+                <td>Transfer Pricing</td>
+                <td>Tax Academy for Beginners</td>
+                <td>New Business</td>
+                <td>Tax Accounting</td>
+                <td>Motion Design</td>
+                <td>3D Modeling</td>
+                <td>Brand and Strategy on Instagram</td>
+            </tr>
+            <tr>
+                <td>Finances</td>
+                <td>Customer Service</td>
+                <td>Purchases</td>
+                <td>Finances</td>
+                <td>Administration</td>
+                <td>IT Dep</td>
+                <td>IT Dep</td>
+                <td>Marketing</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>8</td>
+                <td>6</td>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4.3/5</td>
+                <td>4.3/5</td>
+                <td>4.3/5</td>
+                <td>3.0/5</td>
+                <td>4.7/5</td>
+                <td>4.4/5</td>
+                <td>3.0/5</td>
+                <td>4.7/5</td>
+            </tr> -->
