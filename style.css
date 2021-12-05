@@ -23,7 +23,7 @@ Navigation
 }
 .navigation ul{
     color: aliceblue;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .navigation ul li{
     margin: 10px 0px;
@@ -61,11 +61,10 @@ Upgrade
     width: 216px;
     height: 226px;
     border-radius: 5px;
-    margin-top: 150px;
     position: relative;
     text-align: center;
     padding-top: 100px;
-    margin: 150px 15px 15px 15px;
+    margin: 290px 15px 15px 15px;
 }
 .upgrade img{
     position: absolute;
@@ -110,6 +109,7 @@ Search
 }
 .profile_icon{
     display: flex;
+    position: relative;
     justify-content: space-around;
     width: 50%;
 }
@@ -118,13 +118,15 @@ Search
     width: 35px;
     height: 35px;
     object-fit: cover;
+    margin: 3px;
+    justify-content: space-around;
 }
 
 .profile_icon input{
     padding: 15px;
     border-radius: 25px;
     background-color: white;
-    width: 80%;
+    width: 70%;
 }
 
 /* ================
@@ -143,24 +145,24 @@ Chart
 
 .chart_box{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .daily{
-    padding: 20px 10px;
+    padding: 20px 20px;
     width: 145px;
     height: 145px;
     position: relative;
 }
 
 .monthly{
-    padding: 20px 10px;
+    padding: 20px 20px;
     width: 145px;
     height: 145px;
     position: relative;
 }
 
 .yearly{
-    padding: 20px 10px;
+    padding: 20px 20px;
     width: 145px;
     height: 145px;
     position: relative;
@@ -187,10 +189,32 @@ Chart
 /* =============
 Table
 ===============*/
-table{
-    margin: 50px 30px;
+.score{
+    border-collapse: collapse;
+    width: 95%;
+    background-color: #f4f4f4;
+    padding: 30px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+    margin: 30px;
 }
-
+.score thead{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+}
+.score tbody{ 
+    font-size: 12px;
+}
+.score tbody tr td{
+    padding: 15px
+}
+.score thead tr td{
+    padding: 10px;
+}
+table{
+    border-radius: 10px;
+}
 
 
 
@@ -201,8 +225,8 @@ Notice
     width: 95%;
     height: 220px;
     background-color: black;
-    padding: 30px 20px;
-    margin: 40px 20px 20px 20px;
+    padding: 30px 30px;
+    margin: 60px 20px 20px 20px;
     margin-left: 30px;
     border-radius: 10px;
 }
@@ -219,18 +243,21 @@ Notice
 .notice img{
     position: absolute;
     right: 70px;
-    bottom: 80px
+    top: 747px;
 }
 .notice button{
     width: 150px;
     height: 40px;
     right: 40px;
     border: 0;
-    position: relative;
     background-color: #fff;
     border-radius: 30px;
     margin: 20px 0px;
     font-size: 16px;
     font-weight: 800;
     color: red ;
+}
+
+.button_more{
+    margin-right: 30px;
 }
